@@ -2,8 +2,7 @@ import java.util.LinkedList;
 public class Biblioteca {
     /**
      * Esta es la class Biblioteca
-     * Explicación: Esta clase es la que se usa como la biblioteca que es la que nos ayuda a guardar los libros que ya hemos registrado. El ArrayList se usa para que se pueda guardar la informacion de los libros y 
-     * ver que libros estan disponibles.
+     * Explicación: Esta clase es la que se usa como la biblioteca que es la que nos ayuda a guardar los libros que ya hemos registrado.
      * Complejidad temporal: O(1) - Tiempo constante.
      */
     // Atributo
