@@ -1,5 +1,3 @@
-import java.util.ArrayList;
-import java.util.List;
 public class Principal {
     /**
      * El metodo Main
@@ -34,8 +32,7 @@ public class Principal {
            * Complejidad temporal: O(1) - Tiempo constante.
            */
 
-            System.out.println("Se ha encontrado el libro en la biblioteca, estos son sus datos:");
-            List<Libro> librosDisponibles = bibliotecaKonradLorenz.mostrarLibrosDisponibles();
-            for (Libro libro : librosDisponibles) {
-                System.out.println("Título: " + libro.getTitulo());
-                System.out.println("Autor: " + libro.getAutor());
+    bibliotecaKonradLorenz.mostrarLibrosDisponibles();            
+    }
+}
+
