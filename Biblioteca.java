@@ -1,6 +1,4 @@
-import java.util.ArrayList;
-import java.util.List;
-
+import java.util.LinkedList;
 public class Biblioteca {
     /**
      * Esta es la class Biblioteca
@@ -9,7 +7,7 @@ public class Biblioteca {
      * Complejidad temporal: O(1) - Tiempo constante.
      */
     // Atributo
-    private List<Libro> librosDisponibles;
+  private LinkedList<Libro> librosDisponibles = new LinkedList<>();
 
     /**
     * Constructor
