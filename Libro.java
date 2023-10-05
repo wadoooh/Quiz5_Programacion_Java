@@ -23,7 +23,7 @@ public class Libro  {
      * @return titulo que lo que hace es devolver el titulo de el libro seleccionado
      * Complejidad temporal: O(1) - Tiempo constante.
      */
-    public String getTitulo() {
+    public String getTituloLibro() {
         return tituloLibro;
     }
 
