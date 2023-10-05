@@ -11,20 +11,19 @@ public class Biblioteca {
 
     /**
     * Constructor
-    Inicializa la lista de libros que se encuentran disponibles con el Array
+    Inicializa la variable para registrar los libros
      * Complejidad temporal: O(1) - Tiempo constante.
     */
-    public Biblioteca() {
-        librosDisponibles = new ArrayList<>(); 
-    }
+    public void registrarLibro(Libro Libro) {
+        librosDisponibles.add(Libro);
 
    /**
     * Metodo para resgistrar los libros
     Aqui se registran cada uno de los 5 libros.
      * Complejidad temporal: O(1) - Tiempo constante.
     */
-    public void registrarLibro(Libro libro) {
-        librosDisponibles.add(libro); 
+         public Libro buscarLibro(String titulo) {
+        Libro libroEncontrado = null;
     }
 
     /**
@@ -33,7 +32,33 @@ public class Biblioteca {
     * Complejidad temporal: O(1) - Tiempo constante.
     */
   
-    public List<Libro> mostrarLibrosDisponibles() {
-        return librosDisponibles; // Devuelve la lista de libros disponibles
+    for (Libro libro : librosDisponibles) {
+            if (libro.getTituloLibro().equalsIgnoreCase(titulo)) {
+                libroEncontrado = libro;
+                break;
+            }
+        }
+        return libroEncontrado;
+    }
+
+ /**
+    * Método para mostrar la información del libro seleccionado, si se encuentra dara la informacion sino saldra el mensaje null
+    * El método return lo que hace es volver a imprimir la lista de los libros disponibles.
+    * Complejidad temporal: O(1) - Tiempo constante.
+    */
+    // Método para mostrar los libros disponibles en la biblioteca
+    public void mostrarLibrosDisponibles() {
+        if (librosDisponibles.isEmpty()) {
+            System.out.println("No hay libros disponibles en la biblioteca.");
+        } else {
+            System.out.println("Libros disponibles en la biblioteca:");
+            System.out.println("----------------------");
+            for (Libro libro : librosDisponibles) {
+                System.out.println("Título: " + libro.getTituloLibro());
+                System.out.println("Autor: " + libro.getAutor());
+                System.out.println("Número de páginas: " + libro.getNumeroPaginas());
+                System.out.println("----------------------");
+            }
+        }
     }
 }
