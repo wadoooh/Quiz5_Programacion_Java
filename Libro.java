@@ -33,6 +33,6 @@ public class Libro  {
      * @return autor
      * Complejidad temporal: O(1) - Tiempo constante.
      */
-    public String getAutor() {
-        return autor;
+   public void settituloLibro() {
+            this.tituloLibro = tituloLibro;
     }
